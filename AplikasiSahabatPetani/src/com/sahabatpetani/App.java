@@ -4,6 +4,9 @@
  */
 package com.sahabatpetani;
 
+import com.sahabatpetani.gui.InputTest;
+import com.sahabatpetani.login.LoginForm;
+
 /**
  *
  * @author HP PAVILION
@@ -11,5 +14,7 @@ package com.sahabatpetani;
 public class App {
     public static void main(String[] args) {
         //run app
+        LoginForm test = new LoginForm();
+        test.login();
     }
 }
