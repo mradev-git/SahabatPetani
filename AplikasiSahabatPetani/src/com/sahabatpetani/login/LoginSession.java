@@ -1,10 +1,8 @@
 package com.sahabatpetani.login;
 
-import com.sahabatpetani.db.DBConnection;
-
 public class LoginSession {
-    public static int UID; //global user ID
-    public static String Usertype; //global usertype
-    public static String Nickname; //global nickname
-    public static boolean isLoggedIn = false; //check is user is logged in
+    protected static int UID; //global user ID
+    protected static String Username; //global username
+    protected static String Usertype; //global usertype
+    protected static boolean isLoggedIn = false; //check is user is logged in
 }

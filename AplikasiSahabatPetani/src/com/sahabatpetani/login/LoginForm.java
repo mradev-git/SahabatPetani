@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class LoginForm extends JFrame {
-    //Scanner
     Scanner sc = new Scanner(System.in);
     Operation op = new Operation();
     
@@ -15,12 +14,14 @@ public class LoginForm extends JFrame {
     String username, password;
 
     public void login() {
+        //Input
         System.out.print("username: ");
         username = sc.nextLine();
         System.out.print("password: ");
         password = sc.nextLine();
-        String userType = "admin";
-        if (op.isLogin(username, password, userType, this)) {
+
+        //login operation
+        if (op.isLogin(username, password, this)) {
             JOptionPane.showMessageDialog(this, "login berhasil");
         } else {
             JOptionPane.showMessageDialog(this, "login gagal");
