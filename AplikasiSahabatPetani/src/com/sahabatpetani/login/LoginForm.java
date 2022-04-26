@@ -27,6 +27,7 @@ public class LoginForm extends JFrame {
         if (op.isLogin(username, password, this)) {
             JOptionPane.showMessageDialog(this, "login berhasil");
             //initFrame.getFrame(LoginSession.Usertype).setVisible(true); //kurang visibilitas frame
+            
         } else {
             JOptionPane.showMessageDialog(this, "login gagal");
         }
